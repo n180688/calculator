@@ -1,0 +1,39 @@
+div.content {
+    margin: 0 auto;
+}
+
+
+div#screen {
+     display: inline-flex;
+     height: 30%;
+     width: 70%;
+     overflow: ;
+}
+
+div#buttons {
+    border: 1px solid grey;
+    box-shadow: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+button{
+    width: 25%;
+    padding: 8%;
+    border: none;
+    font-size: 150%;
+    background-color: white;
+}
+
+button.signs {
+    color: orangered;
+}
+
+button#equalSign {
+    border-radius: 50%;
+    color: white;
+    background-color: coral;
+    font-size: 200%;
+}
+
