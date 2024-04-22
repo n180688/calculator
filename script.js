@@ -24,8 +24,9 @@ var btn9 = document.getElementById('nine');
 btn9.addEventListener('click', AddButtonsValue);
 var btnZero = document.getElementById('zero');
 btnZero.addEventListener('click', AddButtonsValue);
-var point = document.getElementById('point');
-point.addEventListener('click', AddButtonsValue);
+
+var btnZero2 = document.getElementById('zerox2');
+btnZero2.addEventListener('click', AddButtonsValue);
 
 
 //кнопки действий
@@ -67,11 +68,6 @@ function AddButtonsValue() {
 
 }
 
-//очистка
-function clearAllOutput() {
-    usersInput = "";
-    output.innerText = usersInput;
-}
 
 //удаление последнего введенного элемента
 function removeLastChar() {
@@ -79,7 +75,9 @@ function removeLastChar() {
     output.innerText = usersInput;
 }
 
-//result
+
+//результат
+var getResult = document.getElementById('result');
 
 function calculate() {
     var result = "";
@@ -99,8 +97,14 @@ function calculate() {
         }
     }
     
-
-alert(eval(result));
-
+getResult.innerText = "=" + eval(result);
 
 }
+
+//очистка
+function clearAllOutput() {
+    usersInput = "";
+    output.innerText = usersInput;
+    getResult.innerText = usersInput;
+}
+
